@@ -706,17 +706,12 @@ p {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .-mb-\[70\%\] {
   margin-bottom: -70%;
 }
 
-.-mt-\[100px\] {
-  margin-top: -100px;
+.-mt-\[20vw\] {
+  margin-top: -20vw;
 }
 
 .-mt-\[5\%\] {
@@ -771,14 +766,6 @@ p {
   margin-top: 2rem;
 }
 
-.-mt-\[10vw\] {
-  margin-top: -10vw;
-}
-
-.-mt-\[20vw\] {
-  margin-top: -20vw;
-}
-
 .block {
   display: block;
 }
@@ -791,17 +778,13 @@ p {
   display: grid;
 }
 
-.h-52 {
-  height: 13rem;
+.h-32 {
+  height: 8rem;
 }
 
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-32 {
-  height: 8rem;
 }
 
 .min-h-\[200vh\] {
@@ -850,6 +833,10 @@ p {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-\[auto\2c 1fr\] {
   grid-template-columns: auto 1fr;
 }
@@ -858,16 +845,8 @@ p {
   grid-template-columns: repeat(2,70vw);
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .gap-10 {
@@ -880,10 +859,6 @@ p {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -986,11 +961,6 @@ p {
   padding-bottom: 2rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -999,24 +969,16 @@ p {
   padding-left: 1.25rem;
 }
 
+.pl-common-padding {
+  padding-left: 1.25rem;
+}
+
 .pr-10 {
   padding-right: 2.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pl-common-padding {
-  padding-left: 1.25rem;
 }
 
 .text-center {
@@ -1037,8 +999,8 @@ p {
   line-height: 1;
 }
 
-.text-\[3\.5rem\] {
-  font-size: 3.5rem;
+.text-\[5\.5rem\] {
+  font-size: 5.5rem;
 }
 
 .text-sm {
@@ -1054,10 +1016,6 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[5\.5rem\] {
-  font-size: 5.5rem;
 }
 
 .font-bold {
