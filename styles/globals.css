@@ -74,6 +74,10 @@
     @apply !text-[clamp(2.5rem,1rem+2vw,5rem)];
   }
 
+  .section-title-size--medium {
+    @apply !text-[clamp(3.75rem,1rem+2.5vw,6rem)];
+  }
+
   .section-title-size--bigger {
     @apply !text-[clamp(4rem,1rem+3vw,8rem)];
   }
