@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "din_condensedbold";
+    src: url("/fonts/din_condensed_bold.woff2") format("woff2"),
+      url("/fonts/din_condensed_bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "din_condensed_regular";
+    src: url("/fonts/din-condensed-regular.woff2") format("woff2"),
+      url("/fonts/din-condensed-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "din_condensedlight";
+    src: url("/fonts/din-condensed-light.woff2") format("woff2"),
+      url("/fonts/din-condensed-light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "boogy_brut_poster_webwhite";
+    src: url("/fonts/boogy_brut-poster.woff2") format("woff2"),
+      url("/fonts/boogy_brut-poster.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* DEFAULTS */
+
+  body {
+    font-family: "din_condensed_regular", sans-serif;
+    font-weight: bold;
+    @apply text-primary;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  p {
+    @apply max-w-sm;
+  }
+}
+
+@layer utilities {
+  .linear-gradient--beige {
+    background: linear-gradient(180deg, #ffffff 0%, #f6f5f4 50%, #ddd9d4 100%);
+  }
+
+  .boogy-brut {
+    font-family: "boogy_brut_poster_webwhite", sans-serif;
+  }
+
+  .headline {
+    font-family: "boogy_brut_poster_webwhite", sans-serif;
+    font-weight: normal;
+    width: 100%;
+    line-height: 100%;
+    @apply text-accent text-balance section-title-size;
+  }
+
+  .section-title-size {
+    @apply !text-[clamp(2.5rem,1rem+2vw,5rem)];
+  }
+
+  .section-title-size--bigger {
+    @apply !text-[clamp(4rem,1rem+3vw,8rem)];
+  }
+
+  .card {
+    @apply text-white rounded-xl p-5;
+
+    h3 {
+      @apply text-3xl pl-4 mb-2;
+    }
+  }
+
+  .instruction-step {
+    @apply px-10;
+
+    img {
+      @apply mb-4;
+    }
+
+    h3 {
+      @apply mb-4 text-xl;
+    }
+    p {
+      @apply max-w-sm text-balance;
+    }
+  }
+
+  .faq-item {
+    h1 {
+      @apply headline pl-common-padding relative mt-10 z-20;
+    }
+    p {
+      @apply px-common-padding text-xl mt-10 relative z-10;
+    }
+  }
+
+  .max-flower-width {
+    max-width: 200px;
+  }
+}
