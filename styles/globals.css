@@ -62,7 +62,7 @@
   }
 
   p {
-    @apply max-w-sm text-[clamp(1rem,0.5455rem+2.2727vw,2rem)] lg:text-[clamp(1rem,0.55rem+1.4vw,2rem)] md:max-w-xl 2xl:max-w-none;
+    @apply max-w-sm text-[clamp(1rem,0.5455rem+2.2727vw,2rem)] lg:text-[clamp(1rem,0.55rem+1.3vw,1.75rem)] md:max-w-xl 2xl:max-w-none;
   }
 }
 
