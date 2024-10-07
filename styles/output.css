@@ -613,13 +613,13 @@ video {
 
 body {
   font-family: "din_condensed_regular", sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   --tw-text-opacity: 1;
   color: rgb(47 35 35 / var(--tw-text-opacity));
   @media (min-width: 1024px) {
     font-family: "din_condensed_regular";
 
-    font-weight: bold;
+    font-weight: normal;
   }
 }
 
