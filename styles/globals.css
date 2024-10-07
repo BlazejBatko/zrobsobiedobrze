@@ -109,7 +109,7 @@
     }
 
     h3 {
-      @apply text-xl md:section-title-size leading-[100%];
+      @apply text-xl mb-4 md:section-title-size leading-[100%];
     }
     p {
       @apply max-w-sm text-balance md:max-w-lg;
@@ -131,15 +131,15 @@
 
   .desktop {
     .event-type {
-      @apply text-xl font-bold text-black uppercase;
+      @apply text-xl text-black uppercase;
     }
 
     .event-date {
-      @apply text-[clamp(1rem,10vw,8rem)] leading-none text-black font-bold;
+      @apply text-[clamp(1rem,10vw,8rem)] leading-none text-black;
     }
 
     .event-city {
-      @apply font-semibold mt-2 text-4xl text-[#AC8586] leading-none uppercase;
+      @apply mt-2 text-4xl text-[#AC8586] leading-none uppercase;
     }
 
     .event-address {
@@ -149,5 +149,13 @@
     .event-details {
       @apply text-lg text-black mt-2;
     }
+  }
+
+  .mobile-event-card {
+    @apply mb-6 max-w-[150px];
+  }
+
+  .mobile-event-date {
+    @apply text-2xl  text-black/85 z-50 relative leading-none;
   }
 }
