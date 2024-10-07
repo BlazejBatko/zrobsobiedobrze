@@ -39,8 +39,7 @@
     font-family: "din_condensed_alternate";
     src: url("/fonts/din-condensed-alternate.woff2") format("woff2"),
       url("/fonts/din-condensed-alternate.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
+    font-weight: normal;
   }
 
   /* DEFAULTS */
@@ -140,7 +139,7 @@
     }
 
     .event-city {
-      @apply font-semibold mt-2 text-4xl text-[#AC8586] leading-none;
+      @apply font-semibold mt-2 text-4xl text-[#AC8586] leading-none uppercase;
     }
 
     .event-address {
