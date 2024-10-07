@@ -5,6 +5,7 @@ const COLORS = {
   secondary: "#785B5B",
   accent: "#AC8586",
   foreground: "#814C4E",
+  light_accent: "#AC8586",
 
   flower: "#FDFAF9",
 

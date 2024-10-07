@@ -236,7 +236,7 @@
           </div>
         </div>
 
-        <div class="grid py-10 grid-cols-[auto,1fr] gap-8">
+        <div class="grid py-10 px-10 grid-cols-[auto,1fr] gap-8">
           <div class="relative h-fit w-14">
             <h1
               class="text-5xl text-dark_card bottom-0 tracking-widest mb-auto rotate-180 left-8"
@@ -257,33 +257,43 @@
             class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4"
           >
             <div class="mobile-event-card">
-              <p class="mobile-event-date">OCT</p>
-              <p class="text-[5.5rem] leading-[60%] text-dark_card">15</p>
-              <p class="text-xl uppercase">WT</p>
-              <p class="text-2xl uppercase">WARSZAWA</p>
-              <p class="text-2xl uppercase">STUDIO UKIYO</p>
-              <p class="text-sm">Mokotowska 48</p>
-              <p class="text-xs">WARSZTATY<br />SZCZEGÓŁY WKRÓTCE</p>
+              <p class="mobile-event-date -mb-1">PAŹ</p>
+              <div class="flex gap-1 items-baseline">
+                <p class="mobile-event-number">15</p>
+                <p class="mobile-event-day">WT</p>
+              </div>
+              <p class="mobile-event-city">WARSZAWA</p>
+              <p class="mobile-event-place">STUDIO UKIYO</p>
+              <p class="mobile-event-address">Mokotowska 48</p>
+              <p class="mobile-event-details">
+                WARSZTATY<br />SZCZEGÓŁY WKRÓTCE
+              </p>
             </div>
 
             <div class="mobile-event-card">
-              <p class="mobile-event-date">OCT</p>
-              <p class="text-[5.5rem] leading-[60%] text-dark_card">23</p>
-              <p class="text-xl uppercase">ŚR</p>
-              <p class="text-2xl uppercase">WARSZAWA</p>
-              <p class="text-2xl uppercase">STUDIO 225</p>
-              <p class="text-sm">Nowourodzka 42</p>
-              <p class="text-xs">WARSZTATY<br />SZCZEGÓŁY WKRÓTCE</p>
+              <p class="mobile-event-date">PAŹ</p>
+              <div class="flex gap-1 items-baseline">
+                <p class="mobile-event-number">23</p>
+                <p class="mobile-event-day">ŚR</p>
+              </div>
+              <p class="mobile-event-city">WARSZAWA</p>
+              <p class="mobile-event-place">STUDIO 225</p>
+              <p class="mobile-event-address">Nowourodzka 42</p>
+              <p class="mobile-event-description">
+                WARSZTATY<br />SZCZEGÓŁY WKRÓTCE
+              </p>
             </div>
 
             <div class="mobile-event-card">
-              <p class="mobile-event-date">OCT</p>
-              <p class="text-[5.5rem] leading-[60%] text-dark_card">24</p>
-              <p class="text-xl uppercase">CZW</p>
-              <p class="text-2xl uppercase">WARSZAWA</p>
-              <p class="text-2xl uppercase">REDAKCJA CHILLI ZET</p>
-              <p class="text-sm">Żurawia 8</p>
-              <p class="text-xs">
+              <p class="mobile-event-date">PAŹ</p>
+              <div class="flex gap-1 items-baseline">
+                <p class="mobile-event-number">24</p>
+                <p class="mobile-event-day">CZW</p>
+              </div>
+              <p class="mobile-event-city">WARSZAWA</p>
+              <p class="mobile-event-place">REDAKCJA CHILLI ZET</p>
+              <p class="mobile-event-address">Żurawia 8</p>
+              <p class="mobile-event-description">
                 10:00 - 17:00 AM <br />
                 MOBILNY MAMMOBUS <br />
                 UMOŻLIWIAJĄCY BEZPŁATNE BADANIE PIERSI
@@ -291,25 +301,29 @@
             </div>
 
             <div class="mobile-event-card">
-              <p class="mobile-event-date">OCT</p>
-              <p class="text-[5.5rem] leading-[60%] text-dark_card">27</p>
-              <p class="text-xl uppercase">ND</p>
-              <p class="text-2xl uppercase">WARSZAWA</p>
-              <p class="text-2xl uppercase">HALA KOSZYKI</p>
-              <p class="text-sm">Koszykowa 63</p>
-              <p class="text-xs">
+              <p class="mobile-event-date">PAŹ</p>
+              <div class="flex gap-1 items-baseline">
+                <p class="mobile-event-number">27</p>
+                <p class="mobile-event-day">ND</p>
+              </div>
+              <p class="mobile-event-city">WARSZAWA</p>
+              <p class="mobile-event-place">HALA KOSZYKI</p>
+              <p class="mobile-event-address">Koszykowa 63</p>
+              <p class="mobile-event-details">
                 WARSZTATY <br />
                 SZCZEGÓŁY WKRÓTCE
               </p>
             </div>
 
             <div class="mobile-event-card">
-              <p class="mobile-event-date">OCT</p>
-              <p class="text-[5.5rem] leading-[60%] text-dark_card">30</p>
-              <p class="text-xl uppercase">ŚR</p>
-              <p class="text-2xl uppercase">Food Town w Fabrace Norblina</p>
-              <p class="text-sm">Żelazna 51/53</p>
-              <p class="text-xs">
+              <p class="mobile-event-date">PAŹ</p>
+              <div class="flex gap-1 items-baseline">
+                <p class="mobile-event-number">30</p>
+                <p class="mobile-event-day">ŚR</p>
+              </div>
+              <p class="mobile-event-place">Food Town w Fabrace Norblina</p>
+              <p class="mobile-event-address">Żelazna 51/53</p>
+              <p>
                 PANEL DYSKUSYJNY
                 <br />
                 JAM SESSION
@@ -384,14 +398,18 @@
           <h1>JAK UMÓWIĆ SIĘ NA BADANIE?</h1>
 
           <div class="flex">
-            <button class="relative mt-8 mx-auto">
+            <a
+              href="Zapisz się na bezpłatne badanie.pdf"
+              download="Zapisz się na bezpłatne badanie"
+              class="relative mt-8 mx-auto block"
+            >
               <img src="/assets/button-blob.png" class="w-40" alt="" />
               <span
-                class="text-white text-xl top-1/2 z-20 uppercase absolute -translate-y-1/2 inset-x-0"
+                class="text-white text-xl ml-10 block top-1/2 z-20 uppercase absolute -translate-y-1/2 inset-x-0"
               >
                 Sprawdź tu
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -474,7 +492,7 @@
             kontakt
           </h1>
 
-          <p class="text-xl z-10 relative text-secondary p-10">
+          <p class="text-xl z-10 relative text-secondary p-10 pb-4">
             Jeśli masz jakieś pytania lub chcesz zaangażować się w kampanię
             napisz do nas:
           </p>
@@ -486,33 +504,43 @@
           </span>
 
           <img src="/assets/sponsors.png" class="w-3/4 mx-auto py-10" alt="" />
+
+          <div class="flex items-center pb-2 justify-center">
+            <a
+              href="https://yoiomi.com"
+              class="underline text-lg inline-block ml-1"
+            >
+              YOIOMI Studio.
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
     <main class="hidden lg:block">
-      <section class="relative z-20 h-screen">
+      <section class="relative z-20">
         <img
           src="/assets/desktop_preview.jpg"
-          class="h-screen w-full object-cover"
+          class="w-full object-cover"
           alt=""
         />
       </section>
 
-      <section class="grid grid-cols-2 -mt-[10%] relative">
+      <section class="grid grid-cols-2 relative">
         <div class="col-span-full w-full relative">
           <img
             src="/assets/prev_2.png"
-            class="w-full object-cover filter brightness-50 h-screen object-top"
+            class="absolute inset-0 size-full object-cover brightness-50 object-center"
             alt=""
           />
-
-          <div class="flex items-center h-full">
+          <div
+            class="flex px-common-padding items-center min-h-[95vh] h-full justify-center z-50 relative"
+          >
             <ul
-              class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 absolute inset-0 top-1/2 justify-items-center px-desktop_common"
+              class="grid xl:grid-cols-3 gap-10 justify-items-center px-desktop_common"
             >
               <li>
-                <p class="text-white">
+                <p class="text-white/85">
                   Październik to miesiąc świadomości raka piersi. Cały świat jak
                   za dotknięciem czarodziejskiej różdżki zmienia się w różowy,
                   by pełną mocą edukować w temacie profilaktyki.
@@ -520,7 +548,7 @@
               </li>
 
               <li>
-                <p class="text-white">
+                <p class="text-white/85">
                   W tym roku OPLOTKA razem z radiem CHILLI ZET do tej
                   mobilizacji dołącza. Wspólna kampania #zrobsobiedobrze ma na
                   celu edukować, otoczyć troską, dodać sił tym, które tego
@@ -529,7 +557,7 @@
               </li>
 
               <li>
-                <p class="text-white">
+                <p class="text-white/85">
                   Na tę okoliczność marka OPLOTKA zaprojektowała autorski
                   naszyjnik KWIATUSZEK symbolizujący kobiecego sutka.
                   Nieidealny, organiczny i niesymetryczny. Bo taka właśnie jest
@@ -574,14 +602,14 @@
           <img src="/assets/flower--full.png" alt="" />
 
           <h1
-            class="absolute top-[calc(35%)] inset-x-0 uppercase max-w-xl text-secondary text-center mx-auto mb-4 z-[600] section-title-size leading-none"
+            class="absolute top-[calc(40%)] inset-x-0 uppercase max-w-xl text-secondary text-center mx-auto mb-4 z-[600] section-title-size leading-none"
           >
             wspieram kampanię kupuje naszyjnik
           </h1>
-          <button class="absolute top-[calc(52%)] inset-x-0 mt-4">
+          <button class="absolute top-[calc(55%)] inset-x-0 mt-4">
             <img src="/assets/button-blob.png" class="mx-auto" alt="" />
             <span
-              class="text-white top-1/2 z-20 absolute -translate-y-1/2 inset-0 grid place-content-center"
+              class="text-white top-1/2 text-2xl z-20 absolute -translate-y-1/2 inset-0 grid place-content-center"
             >
               KLIK KLIK
             </span>
@@ -676,7 +704,9 @@
             >
               <div class="event-block">
                 <h2 class="event-type">WT</h2>
-                <h1 class="event-date">15<sub class="text-xs">OCT</sub></h1>
+                <h1 class="event-date">
+                  15<sub class="event-type ml-2">OCT</sub>
+                </h1>
                 <h3 class="event-city">WARSZAWA</h3>
                 <h4 class="event-city">STUDIO UKIYO</h4>
                 <p class="event-address">Mokotowska 48</p>
@@ -688,7 +718,9 @@
 
               <div class="event-block">
                 <h2 class="event-type">ŚR</h2>
-                <h1 class="event-date">23<sub class="text-xs">OCT</sub></h1>
+                <h1 class="event-date">
+                  23<sub class="event-type ml-2">OCT</sub>
+                </h1>
                 <h3 class="event-city">WARSZAWA</h3>
                 <h4 class="event-city">STUDIO 225</h4>
                 <p class="event-address">Nowogrodzka 4/2</p>
@@ -700,7 +732,9 @@
 
               <div class="event-block">
                 <h2 class="event-type">CZW</h2>
-                <h1 class="event-date">24<sub class="text-xs">OCT</sub></h1>
+                <h1 class="event-date">
+                  24<sub class="event-type ml-2">OCT</sub>
+                </h1>
                 <h3 class="event-city">WARSZAWA</h3>
                 <h4 class="event-city">REDAKCJA CHILLI ZET</h4>
                 <p class="event-address">Żurawia 8</p>
@@ -715,7 +749,9 @@
 
               <div class="event-block">
                 <h2 class="event-type">ND</h2>
-                <h1 class="event-date">27<sub class="text-xs">OCT</sub></h1>
+                <h1 class="event-date">
+                  27<sub class="event-type ml-2">OCT</sub>
+                </h1>
                 <h3 class="event-city">WARSZAWA</h3>
                 <h4 class="event-city">HALA KOSZYKI</h4>
                 <p class="event-address">Koszykowa 63</p>
@@ -727,7 +763,9 @@
 
               <div class="event-block">
                 <h2 class="event-type">ŚR</h2>
-                <h1 class="event-date">30<sub class="text-xs">OCT</sub></h1>
+                <h1 class="event-date">
+                  30<sub class="event-type ml-2">OCT</sub>
+                </h1>
                 <h3 class="event-city">WARSZAWA</h3>
                 <h4 class="event-city">Food Town w Fabrace Norblina</h4>
                 <p class="event-address">Żelazna 51/53</p>
@@ -789,14 +827,18 @@
               jak umówić się na badanie?
             </h1>
 
-            <button class="relative mt-8 mx-auto">
+            <a
+              href="/Zapisz się na bezpłatne badanie.pdf"
+              download="Zapisz się na bezpłatne badanie"
+              class="relative mt-8 mx-auto block"
+            >
               <img src="/assets/button-blob.png" class="w-40" alt="" />
               <span
-                class="text-white text-2xl top-1/2 z-20 uppercase absolute -translate-y-1/2 inset-x-0"
+                class="text-white text-2xl ml-6 top-1/2 z-20 uppercase absolute -translate-y-1/2 inset-x-0"
               >
                 Sprawdź tu
               </span>
-            </button>
+            </a>
           </div>
           <img
             src="/assets/desktop_necklage_art.png"
@@ -905,7 +947,7 @@
           <div class="w-fit mx-auto flex flex-col items-center gap-8">
             <div class="ml-[50%] flex flex-col gap-8 -translate-x-1/2">
               <h1 class="headline section-title-size--bigger w-fit">kontakt</h1>
-              <p>
+              <p class="text-balance">
                 Jeśli masz jakieś pytania lub chcesz zaangażować się w kampanię
                 napisz do nas:
               </p>
@@ -918,12 +960,12 @@
               </a>
             </div>
 
-            <img src="/assets/sponsors.png" class="w-[80%] my-[20dvh]" alt="" />
+            <img src="/assets/sponsors.png" class="w-[50%] my-[20dvh]" alt="" />
           </div>
         </div>
 
-        <footer class="flex justify-center text-2xl">
-          Designed & Developed with 🖤 by
+        <footer class="flex justify-center text-xl text-primary/85 pb-4">
+          Designed & Developed with by
 
           <a href="https://yoiomi.com" class="underline inline-block ml-1">
             YOIOMI Studio.

@@ -117,6 +117,7 @@
   }
 
   .faq-item {
+    @apply py-14;
     h1 {
       @apply headline pl-common-padding relative mt-10 z-20;
     }
@@ -156,6 +157,34 @@
   }
 
   .mobile-event-date {
-    @apply text-2xl  text-black/85 z-50 relative leading-none;
+    @apply text-2xl  text-black/85 z-50 relative;
+  }
+
+  .mobile-event-day {
+    @apply text-2xl uppercase text-black/85;
+  }
+
+  .mobile-event-number {
+    @apply text-[5.5rem] leading-[100%] tracking-[-4%] text-black;
+  }
+
+  .mobile-event-day {
+    @apply text-2xl uppercase text-black/85;
+  }
+
+  .mobile-event-city {
+    @apply text-2xl uppercase -mt-2 text-[#AC8586] leading-none;
+  }
+
+  .mobile-event-place {
+    @apply text-2xl uppercase text-[#AC8586] leading-none;
+  }
+
+  .mobile-event-address {
+    @apply leading-none mt-1 mb-3 text-[#AC8586];
+  }
+
+  .mobile-event-details {
+    @apply leading-none;
   }
 }
