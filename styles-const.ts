@@ -16,4 +16,7 @@ const SIZES = {
   flower_size: "200px",
 };
 
-export { COLORS, SIZES };
+const PADDING = {
+  desktop_common: 40,
+};
+export { COLORS, SIZES, PADDING };

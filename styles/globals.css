@@ -35,12 +35,25 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "din_condensed_alternate";
+    src: url("/fonts/din-condensed-alternate.woff2") format("woff2"),
+      url("/fonts/din-condensed-alternate.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
   /* DEFAULTS */
 
   body {
     font-family: "din_condensed_regular", sans-serif;
     font-weight: bold;
     @apply text-primary;
+
+    @media (min-width: 1024px) {
+      font-family: "din_condensed_regular";
+      font-weight: bold;
+    }
   }
 
   img {
@@ -49,7 +62,7 @@
   }
 
   p {
-    @apply max-w-sm;
+    @apply max-w-sm text-[clamp(1rem,0.5455rem+2.2727vw,2rem)] lg:text-[clamp(1rem,0.55rem+1.4vw,2rem)] md:max-w-xl 2xl:max-w-none;
   }
 }
 
@@ -65,13 +78,12 @@
   .headline {
     font-family: "boogy_brut_poster_webwhite", sans-serif;
     font-weight: normal;
-    width: 100%;
     line-height: 100%;
     @apply text-accent text-balance section-title-size;
   }
 
   .section-title-size {
-    @apply !text-[clamp(2.5rem,1rem+2vw,5rem)];
+    @apply !text-[clamp(2.5rem,1.3rem+2.5vw,8rem)];
   }
 
   .section-title-size--medium {
@@ -79,7 +91,7 @@
   }
 
   .section-title-size--bigger {
-    @apply !text-[clamp(4rem,1rem+3vw,8rem)];
+    @apply !text-[clamp(4rem,1rem+3vw,8rem)] lg:!text-[clamp(5rem,5rem+3.5vw,14rem)];
   }
 
   .card {
@@ -98,10 +110,10 @@
     }
 
     h3 {
-      @apply mb-4 text-xl;
+      @apply text-xl md:section-title-size leading-[100%];
     }
     p {
-      @apply max-w-sm text-balance;
+      @apply max-w-sm text-balance md:max-w-lg;
     }
   }
 
@@ -116,5 +128,27 @@
 
   .max-flower-width {
     max-width: 200px;
+  }
+
+  .desktop {
+    .event-type {
+      @apply text-xl font-bold text-black uppercase;
+    }
+
+    .event-date {
+      @apply text-[clamp(1rem,10vw,8rem)] leading-none text-black font-bold;
+    }
+
+    .event-city {
+      @apply font-semibold mt-2 text-4xl text-[#AC8586] leading-none;
+    }
+
+    .event-address {
+      @apply text-xl text-[#AC8586] mt-2;
+    }
+
+    .event-details {
+      @apply text-lg text-black mt-2;
+    }
   }
 }

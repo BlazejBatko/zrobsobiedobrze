@@ -1,4 +1,4 @@
-const { COLORS, SIZES } = require("./styles-const");
+const { COLORS, SIZES, PADDING } = require("./styles-const");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -19,6 +19,7 @@ module.exports = {
       },
       padding: {
         "common-padding": "1.25rem",
+        ...PADDING,
       },
     },
   },
