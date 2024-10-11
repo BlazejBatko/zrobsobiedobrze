@@ -185,6 +185,6 @@
   }
 
   .mobile-event-details {
-    @apply leading-none;
+    @apply leading-tight;
   }
 }
